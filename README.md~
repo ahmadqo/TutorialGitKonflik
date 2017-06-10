@@ -9,6 +9,19 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
 
 ### Kontributro pertama melakukan Sync repo
 
+    rbayu@RBAYU:~/Kolaborasi$ git checkout master
+        Already on 'master'
+        Your branch is up-to-date with 'origin/master'.
+    rbayu@RBAYU:~/Kolaborasi$ git status
+        On branch master
+        Your branch is up-to-date with 'origin/master'.
+        nothing to commit, working directory clean
+    rbayu@RBAYU:~/Kolaborasi$ git push origin master
+        Username for 'https://github.com': qomluciver
+        Password for 'https://qomluciver@github.com': 
+        Everything up-to-date
+    rbayu@RBAYU:~/Kolaborasi$ 
+
 ### Kontributor pertama membuat branch
 
     root@RBAYU:~/Kolaborasi# git checkout -b kontributorsatu
