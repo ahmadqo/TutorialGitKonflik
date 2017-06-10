@@ -100,8 +100,32 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
 ### Kontributor pertama mengirim Pull Request
 <img align=center src=pict/kirim-pr2.png alt="qomzero mengirim PR">
 
+### Pull Request masuk ke upstream
+<img align=center src=pict/pr-masuk1.png alt="PR masuk ke upstream">
 
+<img align=center src=pict/pr-masuk.png alt="PR masuk ke upstream">
 
+### Merge PR oleh upstream
+<img align=center src=pict/merge-pr.png alt="qomzero mengirim PR">
 
+### Terjadi KOnflik
+<img align=center src=pict/tjd-konflik1.png alt="Terjadi KOnflik PR">
 
+<img align=center src=pict/tjd-konflik.png alt="Terjadi KOnflik PR">
 
+### Refolf konflik
+<img align=center src=pict/resolf-konflik.png alt="Terjadi KOnflik PR">
+
+### Semua kontributor melakukan sync repo kembali agar sama dengan repo upstream
+    rbayu@RBAYU:~/Kolaborasi$ git checkout master
+        Already on 'master'
+        Your branch is up-to-date with 'origin/master'.
+    rbayu@RBAYU:~/Kolaborasi$ git status
+        On branch master
+        Your branch is up-to-date with 'origin/master'.
+        nothing to commit, working directory clean
+    rbayu@RBAYU:~/Kolaborasi$ git push origin master
+        Username for 'https://github.com': qomluciver
+        Password for 'https://qomluciver@github.com': 
+        Everything up-to-date
+    rbayu@RBAYU:~/Kolaborasi$ 
