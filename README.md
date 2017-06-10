@@ -2,14 +2,14 @@
 Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 orang yaitu sebagai upstream dan dua orang sebagai kontributor.
 
 ### Melakukan config untuk remote ke github
-####Hal ini hanya dilakukan sekali saja pada saat kita memiliki akun github.
+    Hal ini hanya dilakukan sekali saja pada saat kita memiliki akun github.
 
     rbayu@RBAYU:~$ git config --global user.email "imnalaviaqom@gmail.com"
     rbayu@RBAYU:~$ git config --global user.name "qomluciver"
     
-### Kontributor pertama dan kedua melakukan fork repo milik upstream
-<img align=center src=pict/qomze-fork.png alt="Repo upstream yang akan di fork">
-<img align=center src=pict/qumluc-fork.png alt="Kontributor Pertama">
+### Kontributor pertama dan kedua melakukan fork repo milik upstream    
+    <img align=center src=pict/qomze-fork.png alt="Repo yang shudah di fork qomzero">
+    <img align=center src=pict/qumluc-fork.png alt="Repo yang shudah di fork qomluciver">
 
 ### Kontributor pertama dan kedua melakukan clone
     rbayu@RBAYU:~$ git clone https://github.com/qomluciver/Kolaborasi.git
@@ -32,7 +32,7 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
         upstream	https://github.com/ahmadqo/Kolaborasi.git (fetch)
         upstream	https://github.com/ahmadqo/Kolaborasi.git (push)
 
-### Kontributro pertama dan  kedua melakukan Sync repo
+### Kontributor pertama dan  kedua melakukan Sync repo
     rbayu@RBAYU:~/Kolaborasi$ git checkout master
         Already on 'master'
         Your branch is up-to-date with 'origin/master'.
@@ -57,12 +57,51 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
     root@RBAYU:~/Kolaborasi# git branch * kontributordua master
 
 ### Kontributor pertama push perubahan
-Setelah mengedit file yang diperlukan kemudian kontributor melakukan push ke branch yang telah dibuat.
+    Setelah mengedit file yang diperlukan kemudian kontributor melakukan push ke branch yang telah dibuat.
 
-    root@RBAYU:~/Kolaborasi# nano README.md 
     root@RBAYU:~/Kolaborasi# git add -A
-    root@RBAYU:~/Kolaborasi# git commit -m "#10-Cange Title"
-    root@RBAYU:~/Kolaborasi# git push origin kontribusipr
+    root@RBAYU:~/Kolaborasi# git commit -m "#10-Change Title"
+        [kontribusipr 8929924] merubah file readme
+         1 file changed, 1 insertion(+), 1 deletion(-)
+    root@RBAYU:~/Kolaborasi# git push origin kontributorsatu
+        Username for 'https://github.com': qomzero
+        Password for 'https://qomzero@github.com': 
+        Counting objects: 3, done.
+        Delta compression using up to 4 threads.
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 361 bytes | 0 bytes/s, done.
+        Total 3 (delta 1), reused 0 (delta 0)
+        remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+        To https://github.com/qomzero/Kolaborasi.git
+         * [new branch]      kontributorsatu -> kontributorsatu
+
+### Kontributor kedua push perubahan
+    Setelah mengedit file yang diperlukan kemudian kontributor melakukan push ke branch yang telah dibuat.
+
+    root@RBAYU:~/Kolaborasi# git add -A
+    root@RBAYU:~/Kolaborasi# git commit -m "#10-Change Title"
+        [kontribusipr 8929924] merubah file readme
+         1 file changed, 1 insertion(+), 1 deletion(-)
+    root@RBAYU:~/Kolaborasi# git push origin kontributordua
+        Username for 'https://github.com': qomluciver
+        Password for 'https://qomzero@github.com': 
+        Counting objects: 3, done.
+        Delta compression using up to 4 threads.
+        Compressing objects: 100% (3/3), done.
+        Writing objects: 100% (3/3), 361 bytes | 0 bytes/s, done.
+        Total 3 (delta 1), reused 0 (delta 0)
+        remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+        To https://github.com/qomluciver/Kolaborasi.git
+         * [new branch]      kontributordua -> kontributordua
 
 ### Kontributor pertama mengirim Pull Request
-    'kontributordua
+    <img align=center src=pict/kirim-pr1.png alt="qomzero mengirim PR">
+
+### Kontributor pertama mengirim Pull Request
+    <img align=center src=pict/kirim-pr2.png alt="qomzero mengirim PR">
+
+
+
+
+
+
