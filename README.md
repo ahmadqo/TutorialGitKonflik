@@ -5,7 +5,7 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
 <img src=pict/frok.png alt="Repo upstream yang akan di fork">
 
 ### Kontributor pertama melakukan clone
-<img src=pict/qomluc-hasul-fork.png alt="Kontributor Pertama">
+<img src=pict/qomluc-hasil-fork.png alt="Kontributor Pertama">
 
 ### Kontributro pertama melakukan Sync repo
 
