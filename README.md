@@ -8,8 +8,8 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
     rbayu@RBAYU:~$ git config --global user.name "qomluciver"
     
 ### Kontributor pertama dan kedua melakukan fork repo milik upstream    
-    <img align=center src=pict/qomze-fork.png alt="Repo yang shudah di fork qomzero">
-    <img align=center src=pict/qumluc-fork.png alt="Repo yang shudah di fork qomluciver">
+<img align=center src=pict/qomze-fork.png alt="Repo yang shudah di fork qomzero">
+<img align=center src=pict/qumluc-fork.png alt="Repo yang shudah di fork qomluciver">
 
 ### Kontributor pertama dan kedua melakukan clone
     rbayu@RBAYU:~$ git clone https://github.com/qomluciver/Kolaborasi.git
@@ -95,10 +95,10 @@ Untuk dapat terjadinya konflik pada sebuah project di git dibutuhkan minimal 3 o
          * [new branch]      kontributordua -> kontributordua
 
 ### Kontributor pertama mengirim Pull Request
-    <img align=center src=pict/kirim-pr1.png alt="qomzero mengirim PR">
+<img align=center src=pict/kirim-pr1.png alt="qomzero mengirim PR">
 
 ### Kontributor pertama mengirim Pull Request
-    <img align=center src=pict/kirim-pr2.png alt="qomzero mengirim PR">
+<img align=center src=pict/kirim-pr2.png alt="qomzero mengirim PR">
 
 
 
